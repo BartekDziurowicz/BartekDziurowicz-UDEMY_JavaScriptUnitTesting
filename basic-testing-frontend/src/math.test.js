@@ -53,11 +53,10 @@ test('should yield 0 if an empty array is provided', () => {
 
 test('should throw an error if no value is passed into the function', () => {
     // arrange
+    // act
     const resultFn = () => {
         add();
     }
-
-    // act
 
     // assert
     expect(resultFn).toThrow();
@@ -67,12 +66,12 @@ test('should throw an error if provided with multiple arguments instead of aa ar
     // arrange
     const num1 = 1;
     const num2 = 2;
+
+    // act
     const resultFn = () => {
         add(num1, num2);
     };
 
-    // act
-
     // assert
-    expect(resultFn).toThrow();
+    expect(resultFn).toThrow(/is not iterable/);
 });
