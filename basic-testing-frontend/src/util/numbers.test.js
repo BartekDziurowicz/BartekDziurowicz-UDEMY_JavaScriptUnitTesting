@@ -15,12 +15,15 @@ test('should return number fron number value', () => {
 test('should return NaN from string value', () => {
     // arrange
     const input = 'invalid';
+    const input2 = {};
 
     // act
     const result = transformToNumber(input);
+    const result2 = transformToNumber(input2);
 
     // assert
     expect(result).toBeNaN();
+    expect(result2).toBeNaN();
 });
 
 test('should return number from string number', () => {
