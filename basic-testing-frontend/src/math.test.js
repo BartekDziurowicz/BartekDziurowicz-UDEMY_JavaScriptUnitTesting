@@ -12,5 +12,5 @@ test('should summarize all number values in an array', () => {
     const expectedValue = numbers.reduce(
         (prevValue, currentValue) => prevValue + currentValue, 0
     );
-    expect(result).toBe(6);
+    expect(result).toBe(expectedValue);
 });
