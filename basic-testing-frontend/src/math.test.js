@@ -39,3 +39,26 @@ test('should yield a correct sum if an array of numberic string values is provid
     );
     expect(result).toBe(expectedValue);
 });
+
+test('should yield 0 if an empty array is provided', () => {
+    // arrange
+    const numbers = [];
+
+    // act
+    const result = add(numbers);
+
+    // assert
+    expect(result).toBe(0);
+});
+
+test('should throw an error if no value is passed into the function', () => {
+    // arrange
+    const resultFn = () => {
+        add();
+    }
+
+    // act
+
+    // assert
+    expect(resultFn).toThrow();
+});
