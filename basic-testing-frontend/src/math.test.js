@@ -3,7 +3,7 @@ import { add } from './math.js'
 
 test('should summarize all number values in an array', () => {
     // arrange
-    const numbers = [1, 2, 3];
+    const numbers = [1, 2];
 
     // act
     const result = add(numbers);
