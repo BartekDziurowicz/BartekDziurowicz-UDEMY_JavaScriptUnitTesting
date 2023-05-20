@@ -7,9 +7,9 @@ describe('generatedResultText()', () => {
         const val2 = 'invalid';
         const val3 = false;
 
-        const result1 = generatedResultText(val1);
-        const result2 = generatedResultText(val2);
-        const result3 = generatedResultText(val3);
+        const result1 = generateResultText(val1);
+        const result2 = generateResultText(val2);
+        const result3 = generateResultText(val3);
 
         expect(result1).toBeTypeOf('string');
         expect(result2).toBeTypeOf('string');
